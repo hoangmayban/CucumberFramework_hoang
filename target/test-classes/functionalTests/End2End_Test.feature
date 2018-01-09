@@ -10,3 +10,4 @@ Scenario: Customer place order by purchasing an item
 	And select same delivery address
 	And select payment method as "check" payment
 	And place the order
+	
