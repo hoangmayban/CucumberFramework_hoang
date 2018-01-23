@@ -12,4 +12,4 @@ Scenario Outline: Customer place an order by purchasing an item from search
 	And place the order
 Examples:
 	|customer|
-	|Lakshay|
+	|Virender|
