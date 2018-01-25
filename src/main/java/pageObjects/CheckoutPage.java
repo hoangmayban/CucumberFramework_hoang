@@ -139,6 +139,8 @@ public class CheckoutPage {
 	
 	public void clickOn_PlaceOrder() {
 		btn_PlaceOrder.submit();
+		Wait.untilJqueryIsDone(driver);
+		Wait.untilPageLoadComplete(driver);
 		Wait.untilPageLoadComplete(driver);
 	}
 	
@@ -154,5 +156,6 @@ public class CheckoutPage {
 		select_Country(customer.address.country);
 		select_County(customer.address.county);		
 	}
+
 
 }

@@ -1,6 +1,8 @@
 package pageObjects;
 
 import java.util.List;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
@@ -26,6 +28,10 @@ public class ProductListingPage {
 	
 	public void select_Product(int productNumber) {
 		prd_List.get(productNumber).click();
+	}
+	
+	public String getProductName(int productNumber) {
+		return prd_List.get(productNumber).findElement(By.cssSelector("h3")).getText();
 	}
  
 }
